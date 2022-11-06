@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up form</title>
+    <link rel="stylesheet" href="general.css">
+</head>
+<body>
+    <div class="wrappertext">
+        <a href="homepage.html"><ion-icon class="pulseico" name="pulse-outline"></ion-icon></a>
+        <div class="image"></div>
+        <div class="form-box">
+            <div class="signtitle">
+                <h1>Subscription form</h1>
+            </div>
+            <form action="#" method="post">
+                <div class="input">
+                    <input type="text" id="firstname" name="email" class="mail" placeholder=" " value="" autocomplete="off" required><br>
+                    <label for="firstname" class="labelme">Firstname</label><br>
+                </div>
+
+                <div class="input">
+                    <input type="text" id="lastname" name="email" class="mail" placeholder=" " value="" autocomplete="off" required><br>
+                    <label for="lastname" class="labelme">Lastname</label><br>
+                </div>
+
+                <div class="input">
+                    <input type="email" id="mail" name="email" class="mail" placeholder=" " value="" autocomplete="off" required><br>
+                    <label for="mail" class="labelme">Email</label><br>
+                </div>
+
+                <div class="input">
+                    <input type="tel" id="telephone" name="email" class="mail" placeholder=" " value="" autocomplete="off" required><br>
+                    <label for="telephone" class="labelme">Telephone</label><br>
+                </div>
+
+                <div class="input-box">
+                    <input type="password" name="password" class="passcode" id="passcode" placeholder=" " value=""><br>
+                    <label for="passcode" class="labelme2">Password</label><br>
+                    <span class="Showpass" onclick="clickme()">
+                        <p id="show">show</p>
+                        <p id="hide">hide</p>
+                    </span>
+                </div>
+
+                <input type="submit" value="Sign up" class="sub" name="submit">
+
+                <div class="rem">
+                    <span class="already">
+                        <!-- <input id="check" type="checkbox" name="checkbox"> -->
+                        <label for="check">Already with an account? </label>
+                        <a href="signinform.html" target="_self">Sign in</a>
+                    </span>
+
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="hideshowpassword.js"></script>
+</body>
+</html>
